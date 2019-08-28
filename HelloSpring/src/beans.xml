@@ -25,8 +25,15 @@
 
 
 	</bean>
-	<!-- <bean id="SM" class="Person"> <constructor-arg index="0" value="4" 
-		/> <constructor-arg index="1" value="shireen" /> <bean id="add" class="Person"> 
-		<constructor-arg index="0" value="76" /> <constructor-arg index="1" value="MHOw" 
-		/> <constructor-arg index="2" value="453441" /> </bean> </bean> -->
+	<bean id="SM" class="com.path.Person">
+		<constructor-arg index="0" value="4" />
+		<constructor-arg index="1" value="shireen" />
+		<constructor-arg index="2" >
+			<bean id="add" class="com.path.Address">
+				<constructor-arg index="0" value="76" />
+				<constructor-arg index="1" value="MHOw" />
+				<constructor-arg index="2" value="453441" />
+			</bean>
+		</constructor-arg>
+		</bean>
 </beans>
