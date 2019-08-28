@@ -37,7 +37,9 @@
 		</constructor-arg>
 	</bean>
 
-<bean id="child" parent="JG"></bean>
+	<bean id="child" class="com.path.VIP" parent="JG">
+		<property name="security" value="Z++" />
+	</bean>
 
 	<bean id="list" class="com.path.listDemo">
 		<constructor-arg index="0">
@@ -61,9 +63,9 @@
 	<bean id="map" class="com.path.mapDemo">
 		<constructor-arg index="0">
 			<map>
-			<entry key="1" value="one"/>
-			<entry key="2" value="two"/>
-			<entry key="3" value="three"/>
+				<entry key="1" value="one" />
+				<entry key="2" value="two" />
+				<entry key="3" value="three" />
 			</map>
 		</constructor-arg>
 	</bean>

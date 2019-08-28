@@ -13,6 +13,8 @@ public class HelloSpring {
 		System.out.println(p2);
 		Person p3 = (Person) context.getBean("AG");
 		System.out.println(p3);
+		VIP vip = (VIP) context.getBean("child");
+		System.out.println(vip);
 		listDemo list=(listDemo)context.getBean("list");
 		System.out.println(list);
 		setDemo set=(setDemo)context.getBean("set");
